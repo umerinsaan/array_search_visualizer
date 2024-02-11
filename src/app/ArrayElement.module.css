@@ -1,0 +1,12 @@
+.arrayElement {
+    border: 3px solid rgb(31, 41, 55);
+    padding: 1rem;
+    width: 4rem;
+    text-align: center;
+    transition: background-color 300ms ease-in;
+}
+
+.currElement {
+    background-color: rgba(116, 116, 116, 0.781);
+    color: white;
+}

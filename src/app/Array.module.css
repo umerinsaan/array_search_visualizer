@@ -1,0 +1,38 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.array {
+    display: flex;
+    border: 3px solid rgb(31, 41, 55);
+    border-radius: 7px;
+    width: max-content;
+}
+
+.indices {
+    display: flex;
+    width: max-content;
+    /* gap: 3rem;
+    padding-left: 1rem; */
+    text-align: center;
+}
+
+.index{
+    text-align: center;
+    width: 4rem;
+}
+
+.footer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
