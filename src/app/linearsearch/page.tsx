@@ -9,7 +9,7 @@ export default function LinearSearch() {
     const [arr, setArr] = useState<Array<{ id: number; value: number }>>([]);
     const [currIndex, setCurrIndex] = useState<number>(-1);
 
-    const inputRef = useRef(null);
+    const inputRef = useRef<HTMLInputElement>(null);
 
     useEffect(() => {
         function generateRandomArray() {
@@ -24,9 +24,11 @@ export default function LinearSearch() {
     }, [size]);
 
     function searchClickHandler() {
-        if (inputRef != null && inputRef.current != null && inputRef.current.value.length == 0) return;
+        if (inputRef != null &&
+            inputRef.current != null &&
+            inputRef.current.value.length == 0) return;
 
-        const targetValue = Number(inputRef.current.value);
+        const targetValue = Number(inputRef.current?.value);
 
         setCurrIndex(-1);
         let found = false;
@@ -38,7 +40,6 @@ export default function LinearSearch() {
                     found = true;
                 }
             }, i * 750);
-            // if()
         }
     }
 
