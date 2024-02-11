@@ -24,7 +24,7 @@ export default function LinearSearch() {
     }, [size]);
 
     function searchClickHandler() {
-        if (inputRef.current.value.length == 0) return;
+        if (inputRef != null && inputRef.current.value.length == 0) return;
 
         const targetValue = Number(inputRef.current.value);
 
